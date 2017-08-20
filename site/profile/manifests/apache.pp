@@ -1,8 +1,8 @@
 class profile::apache(
   Boolean $default_vhost = false,
   Integer $port = 80,
-  String $docroot = '/var/www/test',
   String $hostname = $facts['fqdn']
+  String $docroot = "/var/www/$hostname",
 ) {
   class { '::apache':
     default_vhost => $default_vhost,

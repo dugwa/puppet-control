@@ -27,5 +27,5 @@ mod 'profile',
   :git => 'https://github.com/dugwa/puppet-profile.git',
   :ref => 'master'
 mod 'role',
-  :git 'https://github.com/dugwa/puppet-role.git',
+  :git => 'https://github.com/dugwa/puppet-role.git',
   :ref => 'master'

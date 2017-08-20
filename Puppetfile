@@ -17,15 +17,15 @@ mod "puppetlabs/java",        '1.6.0'
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 
-mod 'ssh'
+mod 'ssh',
   :git => 'https://github.com/dugwa/puppet-ssh.git',
   :ref => 'master'
-mod 'ntp'
+mod 'ntp',
   :git => 'https://github.com/dugwa/puppet-ntp.git',
   :ref => 'master'
-mod 'profile'
+mod 'profile',
   :git => 'https://github.com/dugwa/puppet-profile.git',
   :ref => 'master'
-mod 'role'
+mod 'role',
   :git 'https://github.com/dugwa/puppet-role.git',
   :ref => 'master'

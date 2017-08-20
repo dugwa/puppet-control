@@ -27,7 +27,7 @@ mod 'ntp',
   :ref => 'master'
 mod 'profile',
   :git => 'https://github.com/dugwa/puppet-profile.git',
-  :ref => 'master'
+  :ref => 'development'
 mod 'role',
   :git => 'https://github.com/dugwa/puppet-role.git',
-  :ref => 'master'
+  :ref => 'development'

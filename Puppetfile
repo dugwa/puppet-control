@@ -32,4 +32,4 @@ mod 'role',
   :ref => 'master'
 mod 'nginx',
   :git => 'https://github.com/dugwa/puppet-nginx.git',
-  :ref => 'master
+  :ref => 'master'

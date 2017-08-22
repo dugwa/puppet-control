@@ -1,5 +1,0 @@
----
-profile::nginx::vhosts: 
-- 'fqdn': 'node-puppet.dannyboy.com'
-   'port': 80
-   'server_aliases': ''

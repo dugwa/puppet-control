@@ -27,7 +27,7 @@ mod 'ssh',
 mod 'ntp',
   :git => 'https://github.com/dugwa/puppet-ntp.git',
   :ref => 'master'
-mod 'ntp',
+mod 'nginx',
   :git => 'https://github.com/dugwa/puppet-nginx.git',
   :ref => 'master'
 mod 'profile',

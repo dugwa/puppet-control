@@ -30,3 +30,6 @@ mod 'profile',
 mod 'role',
   :git => 'https://github.com/dugwa/puppet-role.git',
   :ref => 'master'
+mod 'nginx',
+  :git => 'https://github.com/dugwa/puppet-nginx.git',
+  :ref => 'master

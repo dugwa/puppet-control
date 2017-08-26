@@ -34,7 +34,6 @@ node default {
 
 node /^node-puppet/ {
   notify {"This is a node definition using regex":}
-  $node_environment="development"
   include role::nginx
   include role::docker
   include role::linux

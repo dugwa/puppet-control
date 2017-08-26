@@ -34,6 +34,10 @@ node default {
 
 node /^node-puppet/ {
   notify {"This is a node definition using regex":}
+  $node_environment="production"
+  include role::nginx
+  include role::docker
+  include role::linux
 }
 
 node /^ubuntu/ {

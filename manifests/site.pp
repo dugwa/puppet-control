@@ -12,7 +12,6 @@
 ## Active Configurations ##
 
 # Disable filebucket by default for all File resources:
-#https://docs.puppet.com/pe/2015.3/release_notes.html#filebucket-resource-no-longer-created-by-default
 File { backup => false }
 
 # DEFAULT NODE
@@ -27,6 +26,22 @@ File { backup => false }
 
 node default {
   # This is where you can declare classes for all nodes.
+  notify {"I am a default node":}
+  #include ntp
   # Example:
   #   class { 'my_class': }
+}
+
+node /^node-puppet/ {
+  notify {'This is a node definition using regex'}
+}
+
+node /^ubuntu/ {
+  notify {"I am an Ubuntu machine":}
+  #include ntp
+}
+
+node 'puppet' {
+  include pe_repo::platform::ubuntu_1404_amd64
+  include pe_repo::platform::el_7_x86_64
 }

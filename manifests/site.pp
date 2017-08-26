@@ -33,7 +33,7 @@ node default {
 }
 
 node /^node-puppet/ {
-  notify {'This is a node definition using regex'}
+  notify {"This is a node definition using regex":}
 }
 
 node /^ubuntu/ {

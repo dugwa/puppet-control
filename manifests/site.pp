@@ -39,6 +39,6 @@ node 'puppet' {
 
 node /^ubuntu/ {
   notify {"I am an Ubuntu machine":}
-  include role:linux
-  include role:web
+  include role::linux
+  include role::web
 }

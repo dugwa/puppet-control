@@ -36,7 +36,6 @@ node /^node-puppet/ {
   notify {"This is a node definition using regex":}
   include role::nginx
   include role::docker
-  include role::linux
 }
 
 node /^ubuntu/ {

@@ -29,4 +29,16 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+  notify {"I am a default machine with no profiles and roles assigned":}
+}
+
+node 'puppet' {
+  include pe_repo::platform::ubuntu_1404_amd64
+  include pe_repo::platform::el_7_x86_64
+}
+
+node /^ubuntu/ {
+  notify {"I am an Ubuntu machine":}
+  include role:linux
+  include role:web
 }

@@ -32,17 +32,6 @@ node default {
   #   class { 'my_class': }
 }
 
-node /^node-puppet/ {
-  notify {"This is a node definition using regex":}
-  include role::nginx
-  include role::docker
-}
-
-node /^ubuntu/ {
-  notify {"I am an Ubuntu machine":}
-  #include ntp
-}
-
 node 'puppet' {
   include pe_repo::platform::ubuntu_1404_amd64
   include pe_repo::platform::el_7_x86_64

@@ -1,5 +1,5 @@
 Table of Contents
-=================
+==================
 
   * [Where Did All The Previous Code Go?](#where-did-all-the-previous-code-go)
   * [What You Get From This control\-repo](#what-you-get-from-this-control-repo)
